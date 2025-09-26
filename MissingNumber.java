@@ -5,6 +5,19 @@ class Solution {
         int xor = 0;
         for (int i = 0; i <= arr.length; i++) {
             xor = xor ^ i;
+        } 
+      
+        for (int i = 0; i < arr.length; i++) {
+            xor = xor ^ arr[i];
+        }
+        return xor;
+
+    }
+    //Missing number in range
+   public int missingNumber(int[] arr, int start , int end) {
+        int xor = 0;
+        for (int i = start; i <=end ; i++) {
+            xor = xor ^ i;
         }
       
         for (int i = 0; i < arr.length; i++) {
